@@ -1,0 +1,1843 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		330C7CB52CF6F09E000AA76E /* SecurityInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330C7CB42CF6F09E000AA76E /* SecurityInterface.framework */; };
+		330C7CBA2CF70F95000AA76E /* HqLockScript.command in Resources */ = {isa = PBXBuildFile; fileRef = 330C7CB92CF70F95000AA76E /* HqLockScript.command */; };
+		332D1F872CF7FE4F005BDF96 /* HqUtils.sh in Resources */ = {isa = PBXBuildFile; fileRef = 332D1F862CF7FE4F005BDF96 /* HqUtils.sh */; };
+		337727872D1A9A9B00BDDC6B /* HqWebSeverVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 337727862D1A9A9B00BDDC6B /* HqWebSeverVC.xib */; };
+		337727882D1A9A9B00BDDC6B /* HqWebSeverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 337727852D1A9A9B00BDDC6B /* HqWebSeverVC.m */; };
+		3377278C2D1A9AB300BDDC6B /* HqWebSever.m in Sources */ = {isa = PBXBuildFile; fileRef = 3377278B2D1A9AB300BDDC6B /* HqWebSever.m */; };
+		337727902D1A9B9800BDDC6B /* HqUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3377278F2D1A9B9800BDDC6B /* HqUtils.m */; };
+		337727932D1A9D0200BDDC6B /* HqChooseFileUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 337727922D1A9D0200BDDC6B /* HqChooseFileUtils.m */; };
+		33AA519A2D116FC500D87673 /* NSImage+HqImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AA51992D116FC500D87673 /* NSImage+HqImageUtils.m */; };
+		33AA519D2D1171DA00D87673 /* HqRemoveAlphaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AA519C2D1171DA00D87673 /* HqRemoveAlphaVC.m */; };
+		33AA51A02D1179D800D87673 /* Drag.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AA519F2D1179D800D87673 /* Drag.m */; };
+		33DCF8072D14151C00D6A6A9 /* HqJsonToModelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DCF8052D14151C00D6A6A9 /* HqJsonToModelVC.m */; };
+		33DCF8082D14151C00D6A6A9 /* HqJsonToModelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33DCF8062D14151C00D6A6A9 /* HqJsonToModelVC.xib */; };
+		33DCF80C2D141D5900D6A6A9 /* HqJsonToModelLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DCF80B2D141D5900D6A6A9 /* HqJsonToModelLogic.m */; };
+		33DCF80F2D15551700D6A6A9 /* HqScreenSnapshotToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DCF80E2D15551700D6A6A9 /* HqScreenSnapshotToolBar.m */; };
+		36EA760109CEAAC0E021C5A0 /* Pods_HqMacTools_HqMacToolsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72683CEB2523E31EEC38A96 /* Pods_HqMacTools_HqMacToolsUITests.framework */; };
+		6153BA2C2AC52B5D001A53CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6153BA2B2AC52B5D001A53CC /* AppDelegate.m */; };
+		6153BA312AC52B66001A53CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6153BA302AC52B66001A53CC /* Assets.xcassets */; };
+		6153BA342AC52B66001A53CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6153BA322AC52B66001A53CC /* Main.storyboard */; };
+		6153BA362AC52B66001A53CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6153BA352AC52B66001A53CC /* main.m */; };
+		6153BA412AC52B67001A53CC /* HqMacToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6153BA402AC52B67001A53CC /* HqMacToolsTests.m */; };
+		6153BA4B2AC52B67001A53CC /* HqMacToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6153BA4A2AC52B67001A53CC /* HqMacToolsUITests.m */; };
+		6153BA4D2AC52B67001A53CC /* HqMacToolsUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6153BA4C2AC52B67001A53CC /* HqMacToolsUITestsLaunchTests.m */; };
+		6153BA5C2AC5339F001A53CC /* HqFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6153BA5B2AC5339F001A53CC /* HqFileManager.m */; };
+		61567EC32AEB7245008F732E /* HqScreenSnapshotConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 61567EC22AEB7245008F732E /* HqScreenSnapshotConfig.m */; };
+		6166BD8B2AEB4FD700C1AD16 /* HqDrawInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6166BD8A2AEB4FD700C1AD16 /* HqDrawInfo.m */; };
+		61872FC22AEA32500019EB8B /* HqScreenSnapshotVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 61872FC02AEA32500019EB8B /* HqScreenSnapshotVC.m */; };
+		61872FC32AEA32500019EB8B /* HqScreenSnapshotVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61872FC12AEA32500019EB8B /* HqScreenSnapshotVC.xib */; };
+		61872FC72AEA32750019EB8B /* HqScreenSnapshotWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 61872FC62AEA32750019EB8B /* HqScreenSnapshotWindow.m */; };
+		61872FCB2AEA32930019EB8B /* HqScreenSnapshotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61872FCA2AEA32930019EB8B /* HqScreenSnapshotView.m */; };
+		619B57252AE10DD0003EEEA6 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 619B57232AE10DD0003EEEA6 /* libcrypto.a */; };
+		619B57262AE10DD0003EEEA6 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 619B57242AE10DD0003EEEA6 /* libssl.a */; };
+		619B57322AE12810003EEEA6 /* NSData+HqDataExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 619B57312AE12810003EEEA6 /* NSData+HqDataExt.m */; };
+		619B57362AE12DC6003EEEA6 /* NSString+HqStringExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 619B57352AE12DC6003EEEA6 /* NSString+HqStringExt.m */; };
+		619B57562AE258E5003EEEA6 /* NSView+HqViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 619B57552AE258E5003EEEA6 /* NSView+HqViewExt.m */; };
+		619B579B2AE60986003EEEA6 /* HqAESUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 619B57702AE60986003EEEA6 /* HqAESUtil.m */; };
+		619B579C2AE60986003EEEA6 /* HqEncryptAndDecryptVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 619B57722AE60986003EEEA6 /* HqEncryptAndDecryptVC.xib */; };
+		619B579D2AE60986003EEEA6 /* HqHashVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 619B57742AE60986003EEEA6 /* HqHashVC.xib */; };
+		619B579E2AE60986003EEEA6 /* HqHashVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 619B57752AE60986003EEEA6 /* HqHashVC.m */; };
+		619B57A12AE60986003EEEA6 /* HqSafeToolListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 619B577E2AE60986003EEEA6 /* HqSafeToolListVC.xib */; };
+		619B57A22AE60986003EEEA6 /* HqSafeToolListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 619B577F2AE60986003EEEA6 /* HqSafeToolListVC.m */; };
+		619B57A32AE60986003EEEA6 /* HqHashUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 619B57822AE60986003EEEA6 /* HqHashUtil.m */; };
+		619B57A42AE60986003EEEA6 /* HqSafeToolItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 619B57872AE60986003EEEA6 /* HqSafeToolItem.m */; };
+		619B57A52AE60986003EEEA6 /* HqSafeToolGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 619B57882AE60986003EEEA6 /* HqSafeToolGroup.m */; };
+		619B57A62AE60986003EEEA6 /* HqSHAUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 619B578B2AE60986003EEEA6 /* HqSHAUtil.m */; };
+		619B57A72AE60986003EEEA6 /* HqSafeToolConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 619B578E2AE60986003EEEA6 /* HqSafeToolConsts.m */; };
+		619B57A82AE60986003EEEA6 /* HqSafeToolImpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 619B57912AE60986003EEEA6 /* HqSafeToolImpVC.xib */; };
+		619B57A92AE60986003EEEA6 /* HqSafeToolImpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 619B57922AE60986003EEEA6 /* HqSafeToolImpVC.m */; };
+		619B57AC2AE60986003EEEA6 /* HqMD5Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 619B57982AE60986003EEEA6 /* HqMD5Util.m */; };
+		619B57AD2AE60986003EEEA6 /* HqEncryptAndDecryptVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 619B579A2AE60986003EEEA6 /* HqEncryptAndDecryptVC.m */; };
+		619B57B22AE61656003EEEA6 /* HqSafeToolContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 619B57B02AE61656003EEEA6 /* HqSafeToolContainerVC.m */; };
+		619B57B32AE61656003EEEA6 /* HqSafeToolContainerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 619B57B12AE61656003EEEA6 /* HqSafeToolContainerVC.xib */; };
+		619B57B92AE617FE003EEEA6 /* HqEncodeAndDecodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 619B57B72AE617FE003EEEA6 /* HqEncodeAndDecodeVC.m */; };
+		619B57BA2AE617FE003EEEA6 /* HqEncodeAndDecodeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 619B57B82AE617FE003EEEA6 /* HqEncodeAndDecodeVC.xib */; };
+		619B57BE2AE6208C003EEEA6 /* HqSafeToolHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 619B57BD2AE6208C003EEEA6 /* HqSafeToolHeaderView.m */; };
+		619B57C22AE62C01003EEEA6 /* HqEncodeDecodeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 619B57C12AE62C01003EEEA6 /* HqEncodeDecodeUtil.m */; };
+		619B57C92AE63986003EEEA6 /* HqEncodeAndDecodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 619B57C82AE63986003EEEA6 /* HqEncodeAndDecodeView.m */; };
+		619B57CD2AE6509C003EEEA6 /* HqTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 619B57CC2AE6509C003EEEA6 /* HqTextView.m */; };
+		619B57D02AE65ADE003EEEA6 /* HqDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 619B57CF2AE65ADE003EEEA6 /* HqDialog.m */; };
+		619B57D42AE66293003EEEA6 /* HqEncryptAndDecryptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 619B57D32AE66293003EEEA6 /* HqEncryptAndDecryptView.m */; };
+		619B57D82AE66418003EEEA6 /* HqEncryptAndDecryptUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 619B57D72AE66418003EEEA6 /* HqEncryptAndDecryptUtil.m */; };
+		61BD046A2AD106ED00B5BBAF /* HqFileOpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 61BD04692AD106ED00B5BBAF /* HqFileOpVC.m */; };
+		61BD046E2AD1080400B5BBAF /* HqQrcodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 61BD046D2AD1080400B5BBAF /* HqQrcodeVC.m */; };
+		61BD04722AD1128F00B5BBAF /* HqQrcodeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 61BD04712AD1128F00B5BBAF /* HqQrcodeUtil.m */; };
+		61BD04762AD2842E00B5BBAF /* HqImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 61BD04752AD2842E00B5BBAF /* HqImageUtil.m */; };
+		61BD047E2AD2904800B5BBAF /* HqScanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 61BD047D2AD2904800B5BBAF /* HqScanVC.m */; };
+		61BD04802AD3A58500B5BBAF /* ScreenCaptureKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61BD047F2AD3A58400B5BBAF /* ScreenCaptureKit.framework */; };
+		61C692372AD93E3500A868F2 /* HqVCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C692362AD93E3500A868F2 /* HqVCManager.m */; };
+		61C822092AEA69080009564A /* HqScreenSnapshotUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C822082AEA69080009564A /* HqScreenSnapshotUtil.m */; };
+		61C822452AEA8C290009564A /* HqScreenSnapshotManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C822432AEA8C290009564A /* HqScreenSnapshotManager.m */; };
+		61F42E462AD63AAD00598E1F /* HqScreenCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F42E452AD63AAC00598E1F /* HqScreenCapture.m */; };
+		61F42E4C2AD69E2000598E1F /* HqWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F42E4B2AD69E2000598E1F /* HqWindowController.m */; };
+		61F42E502AD6A0D700598E1F /* HqToolsListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F42E4F2AD6A0D700598E1F /* HqToolsListVC.m */; };
+		61F42E532AD6C6D000598E1F /* HqTableRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F42E522AD6C6D000598E1F /* HqTableRowView.m */; };
+		61F42E562AD786FD00598E1F /* HqTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F42E552AD786FD00598E1F /* HqTableCellView.m */; };
+		61F42E5A2AD78CD500598E1F /* HqQrcodeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61F42E592AD78CD500598E1F /* HqQrcodeVC.xib */; };
+		61F42E5E2AD78D1800598E1F /* HqTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F42E5C2AD78D1800598E1F /* HqTestVC.m */; };
+		61F42E5F2AD78D1800598E1F /* HqTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61F42E5D2AD78D1800598E1F /* HqTestVC.xib */; };
+		A2009C84F83101DC5B2B11D3 /* Pods_HqMacTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A34A87141C24403A1C4ECF52 /* Pods_HqMacTools.framework */; };
+		D0C1E6E9CD9DF5DB3DC2D304 /* Pods_HqMacToolsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219C2086AE08CDDC8AFF5DC8 /* Pods_HqMacToolsTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6153BA3D2AC52B67001A53CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6153BA1F2AC52B5D001A53CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6153BA262AC52B5D001A53CC;
+			remoteInfo = HqMacTools;
+		};
+		6153BA472AC52B67001A53CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6153BA1F2AC52B5D001A53CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6153BA262AC52B5D001A53CC;
+			remoteInfo = HqMacTools;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		035155EE678DF8BED7E3A3F9 /* Pods-HqMacTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HqMacTools.debug.xcconfig"; path = "Target Support Files/Pods-HqMacTools/Pods-HqMacTools.debug.xcconfig"; sourceTree = "<group>"; };
+		1343BB260A1CF84EE67923BC /* Pods-HqMacToolsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HqMacToolsTests.release.xcconfig"; path = "Target Support Files/Pods-HqMacToolsTests/Pods-HqMacToolsTests.release.xcconfig"; sourceTree = "<group>"; };
+		219C2086AE08CDDC8AFF5DC8 /* Pods_HqMacToolsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HqMacToolsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		330C7CB22CF6F037000AA76E /* SecurityFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SecurityFoundation.framework; path = System/Library/Frameworks/SecurityFoundation.framework; sourceTree = SDKROOT; };
+		330C7CB42CF6F09E000AA76E /* SecurityInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SecurityInterface.framework; path = System/Library/Frameworks/SecurityInterface.framework; sourceTree = SDKROOT; };
+		330C7CB92CF70F95000AA76E /* HqLockScript.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = HqLockScript.command; sourceTree = "<group>"; };
+		332D1F862CF7FE4F005BDF96 /* HqUtils.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = HqUtils.sh; sourceTree = "<group>"; };
+		337727842D1A9A9B00BDDC6B /* HqWebSeverVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqWebSeverVC.h; sourceTree = "<group>"; };
+		337727852D1A9A9B00BDDC6B /* HqWebSeverVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqWebSeverVC.m; sourceTree = "<group>"; };
+		337727862D1A9A9B00BDDC6B /* HqWebSeverVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HqWebSeverVC.xib; sourceTree = "<group>"; };
+		3377278A2D1A9AB300BDDC6B /* HqWebSever.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqWebSever.h; sourceTree = "<group>"; };
+		3377278B2D1A9AB300BDDC6B /* HqWebSever.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqWebSever.m; sourceTree = "<group>"; };
+		3377278E2D1A9B9800BDDC6B /* HqUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqUtils.h; sourceTree = "<group>"; };
+		3377278F2D1A9B9800BDDC6B /* HqUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqUtils.m; sourceTree = "<group>"; };
+		337727912D1A9D0200BDDC6B /* HqChooseFileUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqChooseFileUtils.h; sourceTree = "<group>"; };
+		337727922D1A9D0200BDDC6B /* HqChooseFileUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqChooseFileUtils.m; sourceTree = "<group>"; };
+		33AA51982D116FC500D87673 /* NSImage+HqImageUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSImage+HqImageUtils.h"; sourceTree = "<group>"; };
+		33AA51992D116FC500D87673 /* NSImage+HqImageUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSImage+HqImageUtils.m"; sourceTree = "<group>"; };
+		33AA519B2D1171DA00D87673 /* HqRemoveAlphaVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqRemoveAlphaVC.h; sourceTree = "<group>"; };
+		33AA519C2D1171DA00D87673 /* HqRemoveAlphaVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqRemoveAlphaVC.m; sourceTree = "<group>"; };
+		33AA519E2D1179D800D87673 /* Drag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Drag.h; sourceTree = "<group>"; };
+		33AA519F2D1179D800D87673 /* Drag.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Drag.m; sourceTree = "<group>"; };
+		33DCF8042D14151C00D6A6A9 /* HqJsonToModelVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqJsonToModelVC.h; sourceTree = "<group>"; };
+		33DCF8052D14151C00D6A6A9 /* HqJsonToModelVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqJsonToModelVC.m; sourceTree = "<group>"; };
+		33DCF8062D14151C00D6A6A9 /* HqJsonToModelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HqJsonToModelVC.xib; sourceTree = "<group>"; };
+		33DCF80A2D141D5900D6A6A9 /* HqJsonToModelLogic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqJsonToModelLogic.h; sourceTree = "<group>"; };
+		33DCF80B2D141D5900D6A6A9 /* HqJsonToModelLogic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqJsonToModelLogic.m; sourceTree = "<group>"; };
+		33DCF80D2D15551700D6A6A9 /* HqScreenSnapshotToolBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqScreenSnapshotToolBar.h; sourceTree = "<group>"; };
+		33DCF80E2D15551700D6A6A9 /* HqScreenSnapshotToolBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqScreenSnapshotToolBar.m; sourceTree = "<group>"; };
+		4F994B08AFC54F33DB7C6AC3 /* Pods-HqMacTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HqMacTools.release.xcconfig"; path = "Target Support Files/Pods-HqMacTools/Pods-HqMacTools.release.xcconfig"; sourceTree = "<group>"; };
+		6153BA272AC52B5D001A53CC /* HqMacTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HqMacTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6153BA2A2AC52B5D001A53CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6153BA2B2AC52B5D001A53CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6153BA302AC52B66001A53CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6153BA332AC52B66001A53CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6153BA352AC52B66001A53CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6153BA372AC52B66001A53CC /* HqMacTools.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HqMacTools.entitlements; sourceTree = "<group>"; };
+		6153BA3C2AC52B67001A53CC /* HqMacToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HqMacToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6153BA402AC52B67001A53CC /* HqMacToolsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqMacToolsTests.m; sourceTree = "<group>"; };
+		6153BA462AC52B67001A53CC /* HqMacToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HqMacToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6153BA4A2AC52B67001A53CC /* HqMacToolsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqMacToolsUITests.m; sourceTree = "<group>"; };
+		6153BA4C2AC52B67001A53CC /* HqMacToolsUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqMacToolsUITestsLaunchTests.m; sourceTree = "<group>"; };
+		6153BA5A2AC5339F001A53CC /* HqFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqFileManager.h; sourceTree = "<group>"; };
+		6153BA5B2AC5339F001A53CC /* HqFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqFileManager.m; sourceTree = "<group>"; };
+		61567EC12AEB7245008F732E /* HqScreenSnapshotConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqScreenSnapshotConfig.h; sourceTree = "<group>"; };
+		61567EC22AEB7245008F732E /* HqScreenSnapshotConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqScreenSnapshotConfig.m; sourceTree = "<group>"; };
+		6166BD892AEB4FD700C1AD16 /* HqDrawInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqDrawInfo.h; sourceTree = "<group>"; };
+		6166BD8A2AEB4FD700C1AD16 /* HqDrawInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqDrawInfo.m; sourceTree = "<group>"; };
+		61872FBF2AEA32500019EB8B /* HqScreenSnapshotVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqScreenSnapshotVC.h; sourceTree = "<group>"; };
+		61872FC02AEA32500019EB8B /* HqScreenSnapshotVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqScreenSnapshotVC.m; sourceTree = "<group>"; };
+		61872FC12AEA32500019EB8B /* HqScreenSnapshotVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HqScreenSnapshotVC.xib; sourceTree = "<group>"; };
+		61872FC52AEA32750019EB8B /* HqScreenSnapshotWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqScreenSnapshotWindow.h; sourceTree = "<group>"; };
+		61872FC62AEA32750019EB8B /* HqScreenSnapshotWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqScreenSnapshotWindow.m; sourceTree = "<group>"; };
+		61872FC92AEA32930019EB8B /* HqScreenSnapshotView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqScreenSnapshotView.h; sourceTree = "<group>"; };
+		61872FCA2AEA32930019EB8B /* HqScreenSnapshotView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqScreenSnapshotView.m; sourceTree = "<group>"; };
+		619B569B2AE10DCF003EEEA6 /* pem2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pem2.h; sourceTree = "<group>"; };
+		619B569C2AE10DCF003EEEA6 /* kdf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kdf.h; sourceTree = "<group>"; };
+		619B569D2AE10DCF003EEEA6 /* pem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pem.h; sourceTree = "<group>"; };
+		619B569E2AE10DCF003EEEA6 /* asyncerr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asyncerr.h; sourceTree = "<group>"; };
+		619B569F2AE10DCF003EEEA6 /* md2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md2.h; sourceTree = "<group>"; };
+		619B56A02AE10DCF003EEEA6 /* ssl3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl3.h; sourceTree = "<group>"; };
+		619B56A12AE10DCF003EEEA6 /* ossl_typ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ossl_typ.h; sourceTree = "<group>"; };
+		619B56A22AE10DCF003EEEA6 /* dtls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dtls1.h; sourceTree = "<group>"; };
+		619B56A32AE10DCF003EEEA6 /* err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = err.h; sourceTree = "<group>"; };
+		619B56A42AE10DCF003EEEA6 /* bn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bn.h; sourceTree = "<group>"; };
+		619B56A52AE10DCF003EEEA6 /* blowfish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blowfish.h; sourceTree = "<group>"; };
+		619B56A62AE10DCF003EEEA6 /* cms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cms.h; sourceTree = "<group>"; };
+		619B56A72AE10DCF003EEEA6 /* engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = engine.h; sourceTree = "<group>"; };
+		619B56A82AE10DCF003EEEA6 /* conf_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conf_api.h; sourceTree = "<group>"; };
+		619B56A92AE10DCF003EEEA6 /* esserr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = esserr.h; sourceTree = "<group>"; };
+		619B56AA2AE10DCF003EEEA6 /* core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = core.h; sourceTree = "<group>"; };
+		619B56AB2AE10DCF003EEEA6 /* x509.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509.h; sourceTree = "<group>"; };
+		619B56AC2AE10DCF003EEEA6 /* asn1_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1_mac.h; sourceTree = "<group>"; };
+		619B56AD2AE10DCF003EEEA6 /* objectserr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objectserr.h; sourceTree = "<group>"; };
+		619B56AE2AE10DCF003EEEA6 /* params.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = params.h; sourceTree = "<group>"; };
+		619B56AF2AE10DCF003EEEA6 /* cmserr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmserr.h; sourceTree = "<group>"; };
+		619B56B02AE10DCF003EEEA6 /* http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = http.h; sourceTree = "<group>"; };
+		619B56B12AE10DCF003EEEA6 /* ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ui.h; sourceTree = "<group>"; };
+		619B56B22AE10DCF003EEEA6 /* sha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha.h; sourceTree = "<group>"; };
+		619B56B32AE10DCF003EEEA6 /* symhacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = symhacks.h; sourceTree = "<group>"; };
+		619B56B42AE10DCF003EEEA6 /* asn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1.h; sourceTree = "<group>"; };
+		619B56B52AE10DCF003EEEA6 /* bioerr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bioerr.h; sourceTree = "<group>"; };
+		619B56B62AE10DCF003EEEA6 /* opensslconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opensslconf.h; sourceTree = "<group>"; };
+		619B56B72AE10DCF003EEEA6 /* bio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bio.h; sourceTree = "<group>"; };
+		619B56B82AE10DCF003EEEA6 /* rc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc2.h; sourceTree = "<group>"; };
+		619B56B92AE10DCF003EEEA6 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		619B56BA2AE10DCF003EEEA6 /* dh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dh.h; sourceTree = "<group>"; };
+		619B56BB2AE10DCF003EEEA6 /* cryptoerr_legacy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cryptoerr_legacy.h; sourceTree = "<group>"; };
+		619B56BC2AE10DCF003EEEA6 /* proverr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = proverr.h; sourceTree = "<group>"; };
+		619B56BD2AE10DCF003EEEA6 /* x509v3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509v3.h; sourceTree = "<group>"; };
+		619B56BE2AE10DCF003EEEA6 /* core_object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = core_object.h; sourceTree = "<group>"; };
+		619B56BF2AE10DCF003EEEA6 /* decodererr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decodererr.h; sourceTree = "<group>"; };
+		619B56C02AE10DCF003EEEA6 /* param_build.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = param_build.h; sourceTree = "<group>"; };
+		619B56C12AE10DCF003EEEA6 /* conf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conf.h; sourceTree = "<group>"; };
+		619B56C22AE10DCF003EEEA6 /* conftypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conftypes.h; sourceTree = "<group>"; };
+		619B56C32AE10DCF003EEEA6 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		619B56C42AE10DCF003EEEA6 /* decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decoder.h; sourceTree = "<group>"; };
+		619B56C52AE10DCF003EEEA6 /* pemerr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pemerr.h; sourceTree = "<group>"; };
+		619B56C62AE10DCF003EEEA6 /* crmferr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crmferr.h; sourceTree = "<group>"; };
+		619B56C72AE10DCF003EEEA6 /* x509_vfy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509_vfy.h; sourceTree = "<group>"; };
+		619B56C82AE10DCF003EEEA6 /* txt_db.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = txt_db.h; sourceTree = "<group>"; };
+		619B56C92AE10DCF003EEEA6 /* cmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmp.h; sourceTree = "<group>"; };
+		619B56CA2AE10DCF003EEEA6 /* comperr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comperr.h; sourceTree = "<group>"; };
+		619B56CB2AE10DCF003EEEA6 /* cterr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cterr.h; sourceTree = "<group>"; };
+		619B56CC2AE10DCF003EEEA6 /* self_test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = self_test.h; sourceTree = "<group>"; };
+		619B56CD2AE10DCF003EEEA6 /* safestack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = safestack.h; sourceTree = "<group>"; };
+		619B56CE2AE10DCF003EEEA6 /* configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = configuration.h; sourceTree = "<group>"; };
+		619B56CF2AE10DCF003EEEA6 /* fips_names.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fips_names.h; sourceTree = "<group>"; };
+		619B56D02AE10DCF003EEEA6 /* ecdsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdsa.h; sourceTree = "<group>"; };
+		619B56D12AE10DCF003EEEA6 /* sslerr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sslerr.h; sourceTree = "<group>"; };
+		619B56D22AE10DCF003EEEA6 /* prov_ssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prov_ssl.h; sourceTree = "<group>"; };
+		619B56D32AE10DCF003EEEA6 /* fipskey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fipskey.h; sourceTree = "<group>"; };
+		619B56D42AE10DCF003EEEA6 /* rc5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc5.h; sourceTree = "<group>"; };
+		619B56D52AE10DCF003EEEA6 /* uierr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uierr.h; sourceTree = "<group>"; };
+		619B56D62AE10DCF003EEEA6 /* x509v3err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509v3err.h; sourceTree = "<group>"; };
+		619B56D72AE10DCF003EEEA6 /* objects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objects.h; sourceTree = "<group>"; };
+		619B56D82AE10DCF003EEEA6 /* pkcs12.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs12.h; sourceTree = "<group>"; };
+		619B56D92AE10DCF003EEEA6 /* crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto.h; sourceTree = "<group>"; };
+		619B56DA2AE10DCF003EEEA6 /* crmf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crmf.h; sourceTree = "<group>"; };
+		619B56DB2AE10DCF003EEEA6 /* cmp_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmp_util.h; sourceTree = "<group>"; };
+		619B56DC2AE10DCF003EEEA6 /* opensslv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opensslv.h; sourceTree = "<group>"; };
+		619B56DD2AE10DCF003EEEA6 /* evperr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evperr.h; sourceTree = "<group>"; };
+		619B56DE2AE10DCF003EEEA6 /* pkcs7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs7.h; sourceTree = "<group>"; };
+		619B56DF2AE10DCF003EEEA6 /* obj_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = obj_mac.h; sourceTree = "<group>"; };
+		619B56E02AE10DCF003EEEA6 /* ct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ct.h; sourceTree = "<group>"; };
+		619B56E12AE10DCF003EEEA6 /* async.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = async.h; sourceTree = "<group>"; };
+		619B56E22AE10DCF003EEEA6 /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		619B56E32AE10DCF003EEEA6 /* ssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl.h; sourceTree = "<group>"; };
+		619B56E42AE10DCF003EEEA6 /* srp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = srp.h; sourceTree = "<group>"; };
+		619B56E52AE10DCF003EEEA6 /* camellia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camellia.h; sourceTree = "<group>"; };
+		619B56E62AE10DCF003EEEA6 /* httperr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = httperr.h; sourceTree = "<group>"; };
+		619B56E72AE10DCF003EEEA6 /* dherr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dherr.h; sourceTree = "<group>"; };
+		619B56E82AE10DCF003EEEA6 /* evp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evp.h; sourceTree = "<group>"; };
+		619B56E92AE10DCF003EEEA6 /* e_os2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = e_os2.h; sourceTree = "<group>"; };
+		619B56EA2AE10DCF003EEEA6 /* trace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trace.h; sourceTree = "<group>"; };
+		619B56EB2AE10DCF003EEEA6 /* md4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md4.h; sourceTree = "<group>"; };
+		619B56EC2AE10DCF003EEEA6 /* core_names.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = core_names.h; sourceTree = "<group>"; };
+		619B56ED2AE10DCF003EEEA6 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		619B56EE2AE10DCF003EEEA6 /* provider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = provider.h; sourceTree = "<group>"; };
+		619B56EF2AE10DCF003EEEA6 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		619B56F02AE10DCF003EEEA6 /* engineerr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = engineerr.h; sourceTree = "<group>"; };
+		619B56F12AE10DCF003EEEA6 /* comp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comp.h; sourceTree = "<group>"; };
+		619B56F22AE10DCF003EEEA6 /* macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macros.h; sourceTree = "<group>"; };
+		619B56F32AE10DCF003EEEA6 /* pkcs12err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs12err.h; sourceTree = "<group>"; };
+		619B56F42AE10DCF003EEEA6 /* encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encoder.h; sourceTree = "<group>"; };
+		619B56F52AE10DCF003EEEA6 /* cast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cast.h; sourceTree = "<group>"; };
+		619B56F62AE10DCF003EEEA6 /* sslerr_legacy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sslerr_legacy.h; sourceTree = "<group>"; };
+		619B56F72AE10DCF003EEEA6 /* rc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc4.h; sourceTree = "<group>"; };
+		619B56F82AE10DCF003EEEA6 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		619B56F92AE10DCF003EEEA6 /* des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des.h; sourceTree = "<group>"; };
+		619B56FA2AE10DCF003EEEA6 /* ocsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ocsp.h; sourceTree = "<group>"; };
+		619B56FB2AE10DCF003EEEA6 /* ec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ec.h; sourceTree = "<group>"; };
+		619B56FC2AE10DCF003EEEA6 /* ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdh.h; sourceTree = "<group>"; };
+		619B56FD2AE10DCF003EEEA6 /* rand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rand.h; sourceTree = "<group>"; };
+		619B56FE2AE10DCF003EEEA6 /* ecerr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecerr.h; sourceTree = "<group>"; };
+		619B56FF2AE10DCF003EEEA6 /* ts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ts.h; sourceTree = "<group>"; };
+		619B57002AE10DCF003EEEA6 /* core_dispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = core_dispatch.h; sourceTree = "<group>"; };
+		619B57012AE10DCF003EEEA6 /* cryptoerr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cryptoerr.h; sourceTree = "<group>"; };
+		619B57022AE10DCF003EEEA6 /* storeerr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = storeerr.h; sourceTree = "<group>"; };
+		619B57032AE10DCF003EEEA6 /* buffererr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffererr.h; sourceTree = "<group>"; };
+		619B57042AE10DD0003EEEA6 /* seed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seed.h; sourceTree = "<group>"; };
+		619B57052AE10DD0003EEEA6 /* modes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modes.h; sourceTree = "<group>"; };
+		619B57062AE10DD0003EEEA6 /* ssl2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl2.h; sourceTree = "<group>"; };
+		619B57072AE10DD0003EEEA6 /* tserr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tserr.h; sourceTree = "<group>"; };
+		619B57082AE10DD0003EEEA6 /* rsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rsa.h; sourceTree = "<group>"; };
+		619B57092AE10DD0003EEEA6 /* ripemd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ripemd.h; sourceTree = "<group>"; };
+		619B570A2AE10DD0003EEEA6 /* whrlpool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = whrlpool.h; sourceTree = "<group>"; };
+		619B570B2AE10DD0003EEEA6 /* encodererr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encodererr.h; sourceTree = "<group>"; };
+		619B570C2AE10DD0003EEEA6 /* cmperr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmperr.h; sourceTree = "<group>"; };
+		619B570D2AE10DD0003EEEA6 /* tls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tls1.h; sourceTree = "<group>"; };
+		619B570E2AE10DD0003EEEA6 /* rsaerr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rsaerr.h; sourceTree = "<group>"; };
+		619B570F2AE10DD0003EEEA6 /* randerr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = randerr.h; sourceTree = "<group>"; };
+		619B57102AE10DD0003EEEA6 /* mdc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mdc2.h; sourceTree = "<group>"; };
+		619B57112AE10DD0003EEEA6 /* ocsperr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ocsperr.h; sourceTree = "<group>"; };
+		619B57122AE10DD0003EEEA6 /* x509err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509err.h; sourceTree = "<group>"; };
+		619B57132AE10DD0003EEEA6 /* pkcs7err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs7err.h; sourceTree = "<group>"; };
+		619B57142AE10DD0003EEEA6 /* dsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dsa.h; sourceTree = "<group>"; };
+		619B57152AE10DD0003EEEA6 /* kdferr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kdferr.h; sourceTree = "<group>"; };
+		619B57162AE10DD0003EEEA6 /* srtp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = srtp.h; sourceTree = "<group>"; };
+		619B57172AE10DD0003EEEA6 /* asn1t.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1t.h; sourceTree = "<group>"; };
+		619B57182AE10DD0003EEEA6 /* dsaerr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dsaerr.h; sourceTree = "<group>"; };
+		619B57192AE10DD0003EEEA6 /* bnerr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bnerr.h; sourceTree = "<group>"; };
+		619B571A2AE10DD0003EEEA6 /* conferr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conferr.h; sourceTree = "<group>"; };
+		619B571B2AE10DD0003EEEA6 /* cmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmac.h; sourceTree = "<group>"; };
+		619B571C2AE10DD0003EEEA6 /* ebcdic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ebcdic.h; sourceTree = "<group>"; };
+		619B571D2AE10DD0003EEEA6 /* store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = store.h; sourceTree = "<group>"; };
+		619B571E2AE10DD0003EEEA6 /* idea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = idea.h; sourceTree = "<group>"; };
+		619B571F2AE10DD0003EEEA6 /* lhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lhash.h; sourceTree = "<group>"; };
+		619B57202AE10DD0003EEEA6 /* ess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ess.h; sourceTree = "<group>"; };
+		619B57212AE10DD0003EEEA6 /* asn1err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1err.h; sourceTree = "<group>"; };
+		619B57232AE10DD0003EEEA6 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		619B57242AE10DD0003EEEA6 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		619B57302AE12810003EEEA6 /* NSData+HqDataExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+HqDataExt.h"; sourceTree = "<group>"; };
+		619B57312AE12810003EEEA6 /* NSData+HqDataExt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+HqDataExt.m"; sourceTree = "<group>"; };
+		619B57342AE12DC6003EEEA6 /* NSString+HqStringExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+HqStringExt.h"; sourceTree = "<group>"; };
+		619B57352AE12DC6003EEEA6 /* NSString+HqStringExt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+HqStringExt.m"; sourceTree = "<group>"; };
+		619B57542AE258E5003EEEA6 /* NSView+HqViewExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSView+HqViewExt.h"; sourceTree = "<group>"; };
+		619B57552AE258E5003EEEA6 /* NSView+HqViewExt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSView+HqViewExt.m"; sourceTree = "<group>"; };
+		619B576A2AE28005003EEEA6 /* HqMacToolsPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqMacToolsPrefixHeader.pch; sourceTree = "<group>"; };
+		619B57702AE60986003EEEA6 /* HqAESUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqAESUtil.m; sourceTree = "<group>"; };
+		619B57712AE60986003EEEA6 /* HqAESUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqAESUtil.h; sourceTree = "<group>"; };
+		619B57722AE60986003EEEA6 /* HqEncryptAndDecryptVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HqEncryptAndDecryptVC.xib; sourceTree = "<group>"; };
+		619B57742AE60986003EEEA6 /* HqHashVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HqHashVC.xib; sourceTree = "<group>"; };
+		619B57752AE60986003EEEA6 /* HqHashVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqHashVC.m; sourceTree = "<group>"; };
+		619B57762AE60986003EEEA6 /* HqHashVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqHashVC.h; sourceTree = "<group>"; };
+		619B577D2AE60986003EEEA6 /* HqSafeToolListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqSafeToolListVC.h; sourceTree = "<group>"; };
+		619B577E2AE60986003EEEA6 /* HqSafeToolListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HqSafeToolListVC.xib; sourceTree = "<group>"; };
+		619B577F2AE60986003EEEA6 /* HqSafeToolListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqSafeToolListVC.m; sourceTree = "<group>"; };
+		619B57812AE60986003EEEA6 /* HqHashUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqHashUtil.h; sourceTree = "<group>"; };
+		619B57822AE60986003EEEA6 /* HqHashUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqHashUtil.m; sourceTree = "<group>"; };
+		619B57832AE60986003EEEA6 /* HqEncryptAndDecryptVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqEncryptAndDecryptVC.h; sourceTree = "<group>"; };
+		619B57852AE60986003EEEA6 /* HqSafeToolItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqSafeToolItem.h; sourceTree = "<group>"; };
+		619B57862AE60986003EEEA6 /* HqSafeToolGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqSafeToolGroup.h; sourceTree = "<group>"; };
+		619B57872AE60986003EEEA6 /* HqSafeToolItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqSafeToolItem.m; sourceTree = "<group>"; };
+		619B57882AE60986003EEEA6 /* HqSafeToolGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqSafeToolGroup.m; sourceTree = "<group>"; };
+		619B578A2AE60986003EEEA6 /* HqSHAUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqSHAUtil.h; sourceTree = "<group>"; };
+		619B578B2AE60986003EEEA6 /* HqSHAUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqSHAUtil.m; sourceTree = "<group>"; };
+		619B578D2AE60986003EEEA6 /* HqSafeToolConsts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqSafeToolConsts.h; sourceTree = "<group>"; };
+		619B578E2AE60986003EEEA6 /* HqSafeToolConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqSafeToolConsts.m; sourceTree = "<group>"; };
+		619B57902AE60986003EEEA6 /* HqSafeToolImpVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqSafeToolImpVC.h; sourceTree = "<group>"; };
+		619B57912AE60986003EEEA6 /* HqSafeToolImpVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HqSafeToolImpVC.xib; sourceTree = "<group>"; };
+		619B57922AE60986003EEEA6 /* HqSafeToolImpVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqSafeToolImpVC.m; sourceTree = "<group>"; };
+		619B57982AE60986003EEEA6 /* HqMD5Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqMD5Util.m; sourceTree = "<group>"; };
+		619B57992AE60986003EEEA6 /* HqMD5Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqMD5Util.h; sourceTree = "<group>"; };
+		619B579A2AE60986003EEEA6 /* HqEncryptAndDecryptVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqEncryptAndDecryptVC.m; sourceTree = "<group>"; };
+		619B57AF2AE61656003EEEA6 /* HqSafeToolContainerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqSafeToolContainerVC.h; sourceTree = "<group>"; };
+		619B57B02AE61656003EEEA6 /* HqSafeToolContainerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqSafeToolContainerVC.m; sourceTree = "<group>"; };
+		619B57B12AE61656003EEEA6 /* HqSafeToolContainerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HqSafeToolContainerVC.xib; sourceTree = "<group>"; };
+		619B57B62AE617FE003EEEA6 /* HqEncodeAndDecodeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqEncodeAndDecodeVC.h; sourceTree = "<group>"; };
+		619B57B72AE617FE003EEEA6 /* HqEncodeAndDecodeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqEncodeAndDecodeVC.m; sourceTree = "<group>"; };
+		619B57B82AE617FE003EEEA6 /* HqEncodeAndDecodeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HqEncodeAndDecodeVC.xib; sourceTree = "<group>"; };
+		619B57BC2AE6208C003EEEA6 /* HqSafeToolHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqSafeToolHeaderView.h; sourceTree = "<group>"; };
+		619B57BD2AE6208C003EEEA6 /* HqSafeToolHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqSafeToolHeaderView.m; sourceTree = "<group>"; };
+		619B57C02AE62C01003EEEA6 /* HqEncodeDecodeUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqEncodeDecodeUtil.h; sourceTree = "<group>"; };
+		619B57C12AE62C01003EEEA6 /* HqEncodeDecodeUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqEncodeDecodeUtil.m; sourceTree = "<group>"; };
+		619B57C72AE63986003EEEA6 /* HqEncodeAndDecodeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqEncodeAndDecodeView.h; sourceTree = "<group>"; };
+		619B57C82AE63986003EEEA6 /* HqEncodeAndDecodeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqEncodeAndDecodeView.m; sourceTree = "<group>"; };
+		619B57CB2AE6509C003EEEA6 /* HqTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqTextView.h; sourceTree = "<group>"; };
+		619B57CC2AE6509C003EEEA6 /* HqTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqTextView.m; sourceTree = "<group>"; };
+		619B57CE2AE65ADE003EEEA6 /* HqDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqDialog.h; sourceTree = "<group>"; };
+		619B57CF2AE65ADE003EEEA6 /* HqDialog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqDialog.m; sourceTree = "<group>"; };
+		619B57D22AE66293003EEEA6 /* HqEncryptAndDecryptView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqEncryptAndDecryptView.h; sourceTree = "<group>"; };
+		619B57D32AE66293003EEEA6 /* HqEncryptAndDecryptView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqEncryptAndDecryptView.m; sourceTree = "<group>"; };
+		619B57D62AE66418003EEEA6 /* HqEncryptAndDecryptUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqEncryptAndDecryptUtil.h; sourceTree = "<group>"; };
+		619B57D72AE66418003EEEA6 /* HqEncryptAndDecryptUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqEncryptAndDecryptUtil.m; sourceTree = "<group>"; };
+		61BD04682AD106ED00B5BBAF /* HqFileOpVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqFileOpVC.h; sourceTree = "<group>"; };
+		61BD04692AD106ED00B5BBAF /* HqFileOpVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqFileOpVC.m; sourceTree = "<group>"; };
+		61BD046C2AD1080400B5BBAF /* HqQrcodeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqQrcodeVC.h; sourceTree = "<group>"; };
+		61BD046D2AD1080400B5BBAF /* HqQrcodeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqQrcodeVC.m; sourceTree = "<group>"; };
+		61BD04702AD1128F00B5BBAF /* HqQrcodeUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqQrcodeUtil.h; sourceTree = "<group>"; };
+		61BD04712AD1128F00B5BBAF /* HqQrcodeUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqQrcodeUtil.m; sourceTree = "<group>"; };
+		61BD04742AD2842E00B5BBAF /* HqImageUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqImageUtil.h; sourceTree = "<group>"; };
+		61BD04752AD2842E00B5BBAF /* HqImageUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqImageUtil.m; sourceTree = "<group>"; };
+		61BD047C2AD2904800B5BBAF /* HqScanVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqScanVC.h; sourceTree = "<group>"; };
+		61BD047D2AD2904800B5BBAF /* HqScanVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqScanVC.m; sourceTree = "<group>"; };
+		61BD047F2AD3A58400B5BBAF /* ScreenCaptureKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenCaptureKit.framework; path = System/Library/Frameworks/ScreenCaptureKit.framework; sourceTree = SDKROOT; };
+		61C692352AD93E3500A868F2 /* HqVCManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqVCManager.h; sourceTree = "<group>"; };
+		61C692362AD93E3500A868F2 /* HqVCManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqVCManager.m; sourceTree = "<group>"; };
+		61C822072AEA69080009564A /* HqScreenSnapshotUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqScreenSnapshotUtil.h; sourceTree = "<group>"; };
+		61C822082AEA69080009564A /* HqScreenSnapshotUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqScreenSnapshotUtil.m; sourceTree = "<group>"; };
+		61C822432AEA8C290009564A /* HqScreenSnapshotManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqScreenSnapshotManager.m; sourceTree = "<group>"; };
+		61C822442AEA8C290009564A /* HqScreenSnapshotManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqScreenSnapshotManager.h; sourceTree = "<group>"; };
+		61F42E442AD63AAC00598E1F /* HqScreenCapture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqScreenCapture.h; sourceTree = "<group>"; };
+		61F42E452AD63AAC00598E1F /* HqScreenCapture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqScreenCapture.m; sourceTree = "<group>"; };
+		61F42E4A2AD69E2000598E1F /* HqWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqWindowController.h; sourceTree = "<group>"; };
+		61F42E4B2AD69E2000598E1F /* HqWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqWindowController.m; sourceTree = "<group>"; };
+		61F42E4E2AD6A0D700598E1F /* HqToolsListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqToolsListVC.h; sourceTree = "<group>"; };
+		61F42E4F2AD6A0D700598E1F /* HqToolsListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqToolsListVC.m; sourceTree = "<group>"; };
+		61F42E512AD6C6D000598E1F /* HqTableRowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqTableRowView.h; sourceTree = "<group>"; };
+		61F42E522AD6C6D000598E1F /* HqTableRowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqTableRowView.m; sourceTree = "<group>"; };
+		61F42E542AD786FD00598E1F /* HqTableCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqTableCellView.h; sourceTree = "<group>"; };
+		61F42E552AD786FD00598E1F /* HqTableCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqTableCellView.m; sourceTree = "<group>"; };
+		61F42E592AD78CD500598E1F /* HqQrcodeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HqQrcodeVC.xib; sourceTree = "<group>"; };
+		61F42E5B2AD78D1800598E1F /* HqTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqTestVC.h; sourceTree = "<group>"; };
+		61F42E5C2AD78D1800598E1F /* HqTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqTestVC.m; sourceTree = "<group>"; };
+		61F42E5D2AD78D1800598E1F /* HqTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HqTestVC.xib; sourceTree = "<group>"; };
+		63857E9022DBD6581CFBB291 /* Pods-HqMacToolsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HqMacToolsTests.debug.xcconfig"; path = "Target Support Files/Pods-HqMacToolsTests/Pods-HqMacToolsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A34A87141C24403A1C4ECF52 /* Pods_HqMacTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HqMacTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD18C51999AB7760A753BF69 /* Pods-HqMacTools-HqMacToolsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HqMacTools-HqMacToolsUITests.release.xcconfig"; path = "Target Support Files/Pods-HqMacTools-HqMacToolsUITests/Pods-HqMacTools-HqMacToolsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E4FC0EA1878B11EF0E001C03 /* Pods-HqMacTools-HqMacToolsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HqMacTools-HqMacToolsUITests.debug.xcconfig"; path = "Target Support Files/Pods-HqMacTools-HqMacToolsUITests/Pods-HqMacTools-HqMacToolsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E72683CEB2523E31EEC38A96 /* Pods_HqMacTools_HqMacToolsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HqMacTools_HqMacToolsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6153BA242AC52B5D001A53CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				330C7CB52CF6F09E000AA76E /* SecurityInterface.framework in Frameworks */,
+				619B57262AE10DD0003EEEA6 /* libssl.a in Frameworks */,
+				61BD04802AD3A58500B5BBAF /* ScreenCaptureKit.framework in Frameworks */,
+				A2009C84F83101DC5B2B11D3 /* Pods_HqMacTools.framework in Frameworks */,
+				619B57252AE10DD0003EEEA6 /* libcrypto.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6153BA392AC52B67001A53CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0C1E6E9CD9DF5DB3DC2D304 /* Pods_HqMacToolsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6153BA432AC52B67001A53CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36EA760109CEAAC0E021C5A0 /* Pods_HqMacTools_HqMacToolsUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1324FED22FEA125539C1864B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				035155EE678DF8BED7E3A3F9 /* Pods-HqMacTools.debug.xcconfig */,
+				4F994B08AFC54F33DB7C6AC3 /* Pods-HqMacTools.release.xcconfig */,
+				E4FC0EA1878B11EF0E001C03 /* Pods-HqMacTools-HqMacToolsUITests.debug.xcconfig */,
+				AD18C51999AB7760A753BF69 /* Pods-HqMacTools-HqMacToolsUITests.release.xcconfig */,
+				63857E9022DBD6581CFBB291 /* Pods-HqMacToolsTests.debug.xcconfig */,
+				1343BB260A1CF84EE67923BC /* Pods-HqMacToolsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		330C7CB82CF70E8E000AA76E /* HqScripts */ = {
+			isa = PBXGroup;
+			children = (
+				330C7CB92CF70F95000AA76E /* HqLockScript.command */,
+				332D1F862CF7FE4F005BDF96 /* HqUtils.sh */,
+			);
+			path = HqScripts;
+			sourceTree = "<group>";
+		};
+		337727832D1A9A7B00BDDC6B /* HqWebSever */ = {
+			isa = PBXGroup;
+			children = (
+				337727892D1A9A9F00BDDC6B /* HqWebSever */,
+				337727842D1A9A9B00BDDC6B /* HqWebSeverVC.h */,
+				337727852D1A9A9B00BDDC6B /* HqWebSeverVC.m */,
+				337727862D1A9A9B00BDDC6B /* HqWebSeverVC.xib */,
+			);
+			path = HqWebSever;
+			sourceTree = "<group>";
+		};
+		337727892D1A9A9F00BDDC6B /* HqWebSever */ = {
+			isa = PBXGroup;
+			children = (
+				3377278A2D1A9AB300BDDC6B /* HqWebSever.h */,
+				3377278B2D1A9AB300BDDC6B /* HqWebSever.m */,
+			);
+			path = HqWebSever;
+			sourceTree = "<group>";
+		};
+		3377278D2D1A9B8E00BDDC6B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3377278E2D1A9B9800BDDC6B /* HqUtils.h */,
+				3377278F2D1A9B9800BDDC6B /* HqUtils.m */,
+				337727912D1A9D0200BDDC6B /* HqChooseFileUtils.h */,
+				337727922D1A9D0200BDDC6B /* HqChooseFileUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		33AA51962D116F4D00D87673 /* HqRemoveAlpha */ = {
+			isa = PBXGroup;
+			children = (
+				33AA519E2D1179D800D87673 /* Drag.h */,
+				33AA519F2D1179D800D87673 /* Drag.m */,
+				33AA519B2D1171DA00D87673 /* HqRemoveAlphaVC.h */,
+				33AA519C2D1171DA00D87673 /* HqRemoveAlphaVC.m */,
+			);
+			path = HqRemoveAlpha;
+			sourceTree = "<group>";
+		};
+		33AA51972D116F9F00D87673 /* HqImageUtils */ = {
+			isa = PBXGroup;
+			children = (
+				33AA51982D116FC500D87673 /* NSImage+HqImageUtils.h */,
+				33AA51992D116FC500D87673 /* NSImage+HqImageUtils.m */,
+			);
+			path = HqImageUtils;
+			sourceTree = "<group>";
+		};
+		33DCF8032D14150500D6A6A9 /* HqJsonToModel */ = {
+			isa = PBXGroup;
+			children = (
+				33DCF8092D141D5000D6A6A9 /* Logic */,
+				33DCF8042D14151C00D6A6A9 /* HqJsonToModelVC.h */,
+				33DCF8052D14151C00D6A6A9 /* HqJsonToModelVC.m */,
+				33DCF8062D14151C00D6A6A9 /* HqJsonToModelVC.xib */,
+			);
+			path = HqJsonToModel;
+			sourceTree = "<group>";
+		};
+		33DCF8092D141D5000D6A6A9 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				33DCF80A2D141D5900D6A6A9 /* HqJsonToModelLogic.h */,
+				33DCF80B2D141D5900D6A6A9 /* HqJsonToModelLogic.m */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		6153BA1E2AC52B5D001A53CC = {
+			isa = PBXGroup;
+			children = (
+				6153BA292AC52B5D001A53CC /* HqMacTools */,
+				6153BA3F2AC52B67001A53CC /* HqMacToolsTests */,
+				6153BA492AC52B67001A53CC /* HqMacToolsUITests */,
+				6153BA282AC52B5D001A53CC /* Products */,
+				1324FED22FEA125539C1864B /* Pods */,
+				8C2AB6B97B9A95975D2A26D8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6153BA282AC52B5D001A53CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6153BA272AC52B5D001A53CC /* HqMacTools.app */,
+				6153BA3C2AC52B67001A53CC /* HqMacToolsTests.xctest */,
+				6153BA462AC52B67001A53CC /* HqMacToolsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6153BA292AC52B5D001A53CC /* HqMacTools */ = {
+			isa = PBXGroup;
+			children = (
+				3377278D2D1A9B8E00BDDC6B /* Utils */,
+				337727832D1A9A7B00BDDC6B /* HqWebSever */,
+				33DCF8032D14150500D6A6A9 /* HqJsonToModel */,
+				33AA51972D116F9F00D87673 /* HqImageUtils */,
+				33AA51962D116F4D00D87673 /* HqRemoveAlpha */,
+				330C7CB82CF70E8E000AA76E /* HqScripts */,
+				61872FBE2AEA31FD0019EB8B /* HqScreenSnapshotVC */,
+				619B57CA2AE65084003EEEA6 /* PublicViews */,
+				619B57B42AE61702003EEEA6 /* HqSafeTools */,
+				619B57532AE258C1003EEEA6 /* HqViewExt */,
+				619B57332AE12DAE003EEEA6 /* HqString */,
+				619B572F2AE127F8003EEEA6 /* HqData */,
+				619B56972AE10DBB003EEEA6 /* ThirdLibs */,
+				61C692342AD93E2500A868F2 /* HqVCManager */,
+				61F42E4D2AD6A0BC00598E1F /* HqToolsListVC */,
+				61F42E492AD69DE100598E1F /* HqWindowController */,
+				61F42E432AD63A7A00598E1F /* HqScreenCapture */,
+				61BD04732AD2841800B5BBAF /* HqImageUtil */,
+				61BD046B2AD107ED00B5BBAF /* HqQrcodeVC */,
+				61BD04672AD106D400B5BBAF /* HqFileOpVC */,
+				6153BA592AC53389001A53CC /* HqFileManager */,
+				6153BA2A2AC52B5D001A53CC /* AppDelegate.h */,
+				6153BA2B2AC52B5D001A53CC /* AppDelegate.m */,
+				619B576A2AE28005003EEEA6 /* HqMacToolsPrefixHeader.pch */,
+				6153BA302AC52B66001A53CC /* Assets.xcassets */,
+				6153BA322AC52B66001A53CC /* Main.storyboard */,
+				6153BA352AC52B66001A53CC /* main.m */,
+				6153BA372AC52B66001A53CC /* HqMacTools.entitlements */,
+			);
+			path = HqMacTools;
+			sourceTree = "<group>";
+		};
+		6153BA3F2AC52B67001A53CC /* HqMacToolsTests */ = {
+			isa = PBXGroup;
+			children = (
+				6153BA402AC52B67001A53CC /* HqMacToolsTests.m */,
+			);
+			path = HqMacToolsTests;
+			sourceTree = "<group>";
+		};
+		6153BA492AC52B67001A53CC /* HqMacToolsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6153BA4A2AC52B67001A53CC /* HqMacToolsUITests.m */,
+				6153BA4C2AC52B67001A53CC /* HqMacToolsUITestsLaunchTests.m */,
+			);
+			path = HqMacToolsUITests;
+			sourceTree = "<group>";
+		};
+		6153BA592AC53389001A53CC /* HqFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				6153BA5A2AC5339F001A53CC /* HqFileManager.h */,
+				6153BA5B2AC5339F001A53CC /* HqFileManager.m */,
+			);
+			path = HqFileManager;
+			sourceTree = "<group>";
+		};
+		61567EC02AEB7233008F732E /* HqScreenSnapshotConfig */ = {
+			isa = PBXGroup;
+			children = (
+				61567EC12AEB7245008F732E /* HqScreenSnapshotConfig.h */,
+				61567EC22AEB7245008F732E /* HqScreenSnapshotConfig.m */,
+			);
+			path = HqScreenSnapshotConfig;
+			sourceTree = "<group>";
+		};
+		61872FBE2AEA31FD0019EB8B /* HqScreenSnapshotVC */ = {
+			isa = PBXGroup;
+			children = (
+				61567EC02AEB7233008F732E /* HqScreenSnapshotConfig */,
+				61C822422AEA8C290009564A /* HqSceenSnapshotManager */,
+				61C822062AEA68F10009564A /* HqScreenSnapshotUtil */,
+				61872FC82AEA327A0019EB8B /* HqScreenSnapshotView */,
+				61872FC42AEA32550019EB8B /* HqScreenSnapshotWindow */,
+				61872FBF2AEA32500019EB8B /* HqScreenSnapshotVC.h */,
+				61872FC02AEA32500019EB8B /* HqScreenSnapshotVC.m */,
+				61872FC12AEA32500019EB8B /* HqScreenSnapshotVC.xib */,
+			);
+			path = HqScreenSnapshotVC;
+			sourceTree = "<group>";
+		};
+		61872FC42AEA32550019EB8B /* HqScreenSnapshotWindow */ = {
+			isa = PBXGroup;
+			children = (
+				61872FC52AEA32750019EB8B /* HqScreenSnapshotWindow.h */,
+				61872FC62AEA32750019EB8B /* HqScreenSnapshotWindow.m */,
+			);
+			path = HqScreenSnapshotWindow;
+			sourceTree = "<group>";
+		};
+		61872FC82AEA327A0019EB8B /* HqScreenSnapshotView */ = {
+			isa = PBXGroup;
+			children = (
+				61872FC92AEA32930019EB8B /* HqScreenSnapshotView.h */,
+				61872FCA2AEA32930019EB8B /* HqScreenSnapshotView.m */,
+				6166BD892AEB4FD700C1AD16 /* HqDrawInfo.h */,
+				6166BD8A2AEB4FD700C1AD16 /* HqDrawInfo.m */,
+				33DCF80D2D15551700D6A6A9 /* HqScreenSnapshotToolBar.h */,
+				33DCF80E2D15551700D6A6A9 /* HqScreenSnapshotToolBar.m */,
+			);
+			path = HqScreenSnapshotView;
+			sourceTree = "<group>";
+		};
+		619B56972AE10DBB003EEEA6 /* ThirdLibs */ = {
+			isa = PBXGroup;
+			children = (
+				619B56982AE10DCF003EEEA6 /* openssl3 */,
+			);
+			path = ThirdLibs;
+			sourceTree = "<group>";
+		};
+		619B56982AE10DCF003EEEA6 /* openssl3 */ = {
+			isa = PBXGroup;
+			children = (
+				619B56992AE10DCF003EEEA6 /* include */,
+				619B57222AE10DD0003EEEA6 /* lib */,
+			);
+			path = openssl3;
+			sourceTree = "<group>";
+		};
+		619B56992AE10DCF003EEEA6 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				619B569A2AE10DCF003EEEA6 /* openssl */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		619B569A2AE10DCF003EEEA6 /* openssl */ = {
+			isa = PBXGroup;
+			children = (
+				619B569B2AE10DCF003EEEA6 /* pem2.h */,
+				619B569C2AE10DCF003EEEA6 /* kdf.h */,
+				619B569D2AE10DCF003EEEA6 /* pem.h */,
+				619B569E2AE10DCF003EEEA6 /* asyncerr.h */,
+				619B569F2AE10DCF003EEEA6 /* md2.h */,
+				619B56A02AE10DCF003EEEA6 /* ssl3.h */,
+				619B56A12AE10DCF003EEEA6 /* ossl_typ.h */,
+				619B56A22AE10DCF003EEEA6 /* dtls1.h */,
+				619B56A32AE10DCF003EEEA6 /* err.h */,
+				619B56A42AE10DCF003EEEA6 /* bn.h */,
+				619B56A52AE10DCF003EEEA6 /* blowfish.h */,
+				619B56A62AE10DCF003EEEA6 /* cms.h */,
+				619B56A72AE10DCF003EEEA6 /* engine.h */,
+				619B56A82AE10DCF003EEEA6 /* conf_api.h */,
+				619B56A92AE10DCF003EEEA6 /* esserr.h */,
+				619B56AA2AE10DCF003EEEA6 /* core.h */,
+				619B56AB2AE10DCF003EEEA6 /* x509.h */,
+				619B56AC2AE10DCF003EEEA6 /* asn1_mac.h */,
+				619B56AD2AE10DCF003EEEA6 /* objectserr.h */,
+				619B56AE2AE10DCF003EEEA6 /* params.h */,
+				619B56AF2AE10DCF003EEEA6 /* cmserr.h */,
+				619B56B02AE10DCF003EEEA6 /* http.h */,
+				619B56B12AE10DCF003EEEA6 /* ui.h */,
+				619B56B22AE10DCF003EEEA6 /* sha.h */,
+				619B56B32AE10DCF003EEEA6 /* symhacks.h */,
+				619B56B42AE10DCF003EEEA6 /* asn1.h */,
+				619B56B52AE10DCF003EEEA6 /* bioerr.h */,
+				619B56B62AE10DCF003EEEA6 /* opensslconf.h */,
+				619B56B72AE10DCF003EEEA6 /* bio.h */,
+				619B56B82AE10DCF003EEEA6 /* rc2.h */,
+				619B56B92AE10DCF003EEEA6 /* types.h */,
+				619B56BA2AE10DCF003EEEA6 /* dh.h */,
+				619B56BB2AE10DCF003EEEA6 /* cryptoerr_legacy.h */,
+				619B56BC2AE10DCF003EEEA6 /* proverr.h */,
+				619B56BD2AE10DCF003EEEA6 /* x509v3.h */,
+				619B56BE2AE10DCF003EEEA6 /* core_object.h */,
+				619B56BF2AE10DCF003EEEA6 /* decodererr.h */,
+				619B56C02AE10DCF003EEEA6 /* param_build.h */,
+				619B56C12AE10DCF003EEEA6 /* conf.h */,
+				619B56C22AE10DCF003EEEA6 /* conftypes.h */,
+				619B56C32AE10DCF003EEEA6 /* md5.h */,
+				619B56C42AE10DCF003EEEA6 /* decoder.h */,
+				619B56C52AE10DCF003EEEA6 /* pemerr.h */,
+				619B56C62AE10DCF003EEEA6 /* crmferr.h */,
+				619B56C72AE10DCF003EEEA6 /* x509_vfy.h */,
+				619B56C82AE10DCF003EEEA6 /* txt_db.h */,
+				619B56C92AE10DCF003EEEA6 /* cmp.h */,
+				619B56CA2AE10DCF003EEEA6 /* comperr.h */,
+				619B56CB2AE10DCF003EEEA6 /* cterr.h */,
+				619B56CC2AE10DCF003EEEA6 /* self_test.h */,
+				619B56CD2AE10DCF003EEEA6 /* safestack.h */,
+				619B56CE2AE10DCF003EEEA6 /* configuration.h */,
+				619B56CF2AE10DCF003EEEA6 /* fips_names.h */,
+				619B56D02AE10DCF003EEEA6 /* ecdsa.h */,
+				619B56D12AE10DCF003EEEA6 /* sslerr.h */,
+				619B56D22AE10DCF003EEEA6 /* prov_ssl.h */,
+				619B56D32AE10DCF003EEEA6 /* fipskey.h */,
+				619B56D42AE10DCF003EEEA6 /* rc5.h */,
+				619B56D52AE10DCF003EEEA6 /* uierr.h */,
+				619B56D62AE10DCF003EEEA6 /* x509v3err.h */,
+				619B56D72AE10DCF003EEEA6 /* objects.h */,
+				619B56D82AE10DCF003EEEA6 /* pkcs12.h */,
+				619B56D92AE10DCF003EEEA6 /* crypto.h */,
+				619B56DA2AE10DCF003EEEA6 /* crmf.h */,
+				619B56DB2AE10DCF003EEEA6 /* cmp_util.h */,
+				619B56DC2AE10DCF003EEEA6 /* opensslv.h */,
+				619B56DD2AE10DCF003EEEA6 /* evperr.h */,
+				619B56DE2AE10DCF003EEEA6 /* pkcs7.h */,
+				619B56DF2AE10DCF003EEEA6 /* obj_mac.h */,
+				619B56E02AE10DCF003EEEA6 /* ct.h */,
+				619B56E12AE10DCF003EEEA6 /* async.h */,
+				619B56E22AE10DCF003EEEA6 /* buffer.h */,
+				619B56E32AE10DCF003EEEA6 /* ssl.h */,
+				619B56E42AE10DCF003EEEA6 /* srp.h */,
+				619B56E52AE10DCF003EEEA6 /* camellia.h */,
+				619B56E62AE10DCF003EEEA6 /* httperr.h */,
+				619B56E72AE10DCF003EEEA6 /* dherr.h */,
+				619B56E82AE10DCF003EEEA6 /* evp.h */,
+				619B56E92AE10DCF003EEEA6 /* e_os2.h */,
+				619B56EA2AE10DCF003EEEA6 /* trace.h */,
+				619B56EB2AE10DCF003EEEA6 /* md4.h */,
+				619B56EC2AE10DCF003EEEA6 /* core_names.h */,
+				619B56ED2AE10DCF003EEEA6 /* hmac.h */,
+				619B56EE2AE10DCF003EEEA6 /* provider.h */,
+				619B56EF2AE10DCF003EEEA6 /* aes.h */,
+				619B56F02AE10DCF003EEEA6 /* engineerr.h */,
+				619B56F12AE10DCF003EEEA6 /* comp.h */,
+				619B56F22AE10DCF003EEEA6 /* macros.h */,
+				619B56F32AE10DCF003EEEA6 /* pkcs12err.h */,
+				619B56F42AE10DCF003EEEA6 /* encoder.h */,
+				619B56F52AE10DCF003EEEA6 /* cast.h */,
+				619B56F62AE10DCF003EEEA6 /* sslerr_legacy.h */,
+				619B56F72AE10DCF003EEEA6 /* rc4.h */,
+				619B56F82AE10DCF003EEEA6 /* stack.h */,
+				619B56F92AE10DCF003EEEA6 /* des.h */,
+				619B56FA2AE10DCF003EEEA6 /* ocsp.h */,
+				619B56FB2AE10DCF003EEEA6 /* ec.h */,
+				619B56FC2AE10DCF003EEEA6 /* ecdh.h */,
+				619B56FD2AE10DCF003EEEA6 /* rand.h */,
+				619B56FE2AE10DCF003EEEA6 /* ecerr.h */,
+				619B56FF2AE10DCF003EEEA6 /* ts.h */,
+				619B57002AE10DCF003EEEA6 /* core_dispatch.h */,
+				619B57012AE10DCF003EEEA6 /* cryptoerr.h */,
+				619B57022AE10DCF003EEEA6 /* storeerr.h */,
+				619B57032AE10DCF003EEEA6 /* buffererr.h */,
+				619B57042AE10DD0003EEEA6 /* seed.h */,
+				619B57052AE10DD0003EEEA6 /* modes.h */,
+				619B57062AE10DD0003EEEA6 /* ssl2.h */,
+				619B57072AE10DD0003EEEA6 /* tserr.h */,
+				619B57082AE10DD0003EEEA6 /* rsa.h */,
+				619B57092AE10DD0003EEEA6 /* ripemd.h */,
+				619B570A2AE10DD0003EEEA6 /* whrlpool.h */,
+				619B570B2AE10DD0003EEEA6 /* encodererr.h */,
+				619B570C2AE10DD0003EEEA6 /* cmperr.h */,
+				619B570D2AE10DD0003EEEA6 /* tls1.h */,
+				619B570E2AE10DD0003EEEA6 /* rsaerr.h */,
+				619B570F2AE10DD0003EEEA6 /* randerr.h */,
+				619B57102AE10DD0003EEEA6 /* mdc2.h */,
+				619B57112AE10DD0003EEEA6 /* ocsperr.h */,
+				619B57122AE10DD0003EEEA6 /* x509err.h */,
+				619B57132AE10DD0003EEEA6 /* pkcs7err.h */,
+				619B57142AE10DD0003EEEA6 /* dsa.h */,
+				619B57152AE10DD0003EEEA6 /* kdferr.h */,
+				619B57162AE10DD0003EEEA6 /* srtp.h */,
+				619B57172AE10DD0003EEEA6 /* asn1t.h */,
+				619B57182AE10DD0003EEEA6 /* dsaerr.h */,
+				619B57192AE10DD0003EEEA6 /* bnerr.h */,
+				619B571A2AE10DD0003EEEA6 /* conferr.h */,
+				619B571B2AE10DD0003EEEA6 /* cmac.h */,
+				619B571C2AE10DD0003EEEA6 /* ebcdic.h */,
+				619B571D2AE10DD0003EEEA6 /* store.h */,
+				619B571E2AE10DD0003EEEA6 /* idea.h */,
+				619B571F2AE10DD0003EEEA6 /* lhash.h */,
+				619B57202AE10DD0003EEEA6 /* ess.h */,
+				619B57212AE10DD0003EEEA6 /* asn1err.h */,
+			);
+			path = openssl;
+			sourceTree = "<group>";
+		};
+		619B57222AE10DD0003EEEA6 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				619B57232AE10DD0003EEEA6 /* libcrypto.a */,
+				619B57242AE10DD0003EEEA6 /* libssl.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		619B572F2AE127F8003EEEA6 /* HqData */ = {
+			isa = PBXGroup;
+			children = (
+				619B57302AE12810003EEEA6 /* NSData+HqDataExt.h */,
+				619B57312AE12810003EEEA6 /* NSData+HqDataExt.m */,
+			);
+			path = HqData;
+			sourceTree = "<group>";
+		};
+		619B57332AE12DAE003EEEA6 /* HqString */ = {
+			isa = PBXGroup;
+			children = (
+				619B57342AE12DC6003EEEA6 /* NSString+HqStringExt.h */,
+				619B57352AE12DC6003EEEA6 /* NSString+HqStringExt.m */,
+			);
+			path = HqString;
+			sourceTree = "<group>";
+		};
+		619B57532AE258C1003EEEA6 /* HqViewExt */ = {
+			isa = PBXGroup;
+			children = (
+				619B57542AE258E5003EEEA6 /* NSView+HqViewExt.h */,
+				619B57552AE258E5003EEEA6 /* NSView+HqViewExt.m */,
+			);
+			path = HqViewExt;
+			sourceTree = "<group>";
+		};
+		619B576E2AE60986003EEEA6 /* HqEncryptAndDecryptVC */ = {
+			isa = PBXGroup;
+			children = (
+				619B57D12AE6626F003EEEA6 /* Views */,
+				619B57832AE60986003EEEA6 /* HqEncryptAndDecryptVC.h */,
+				619B579A2AE60986003EEEA6 /* HqEncryptAndDecryptVC.m */,
+				619B57722AE60986003EEEA6 /* HqEncryptAndDecryptVC.xib */,
+				619B57842AE60986003EEEA6 /* Models */,
+			);
+			path = HqEncryptAndDecryptVC;
+			sourceTree = "<group>";
+		};
+		619B576F2AE60986003EEEA6 /* HqAES */ = {
+			isa = PBXGroup;
+			children = (
+				619B57712AE60986003EEEA6 /* HqAESUtil.h */,
+				619B57702AE60986003EEEA6 /* HqAESUtil.m */,
+			);
+			path = HqAES;
+			sourceTree = "<group>";
+		};
+		619B57732AE60986003EEEA6 /* HqHashVC */ = {
+			isa = PBXGroup;
+			children = (
+				619B57762AE60986003EEEA6 /* HqHashVC.h */,
+				619B57752AE60986003EEEA6 /* HqHashVC.m */,
+				619B57742AE60986003EEEA6 /* HqHashVC.xib */,
+			);
+			path = HqHashVC;
+			sourceTree = "<group>";
+		};
+		619B577C2AE60986003EEEA6 /* HqSafeToolListVC */ = {
+			isa = PBXGroup;
+			children = (
+				619B577D2AE60986003EEEA6 /* HqSafeToolListVC.h */,
+				619B577F2AE60986003EEEA6 /* HqSafeToolListVC.m */,
+				619B577E2AE60986003EEEA6 /* HqSafeToolListVC.xib */,
+			);
+			path = HqSafeToolListVC;
+			sourceTree = "<group>";
+		};
+		619B57802AE60986003EEEA6 /* HqHashUtil */ = {
+			isa = PBXGroup;
+			children = (
+				619B57812AE60986003EEEA6 /* HqHashUtil.h */,
+				619B57822AE60986003EEEA6 /* HqHashUtil.m */,
+			);
+			path = HqHashUtil;
+			sourceTree = "<group>";
+		};
+		619B57842AE60986003EEEA6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				619B57852AE60986003EEEA6 /* HqSafeToolItem.h */,
+				619B57862AE60986003EEEA6 /* HqSafeToolGroup.h */,
+				619B57872AE60986003EEEA6 /* HqSafeToolItem.m */,
+				619B57882AE60986003EEEA6 /* HqSafeToolGroup.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		619B57892AE60986003EEEA6 /* HqSHAUtil */ = {
+			isa = PBXGroup;
+			children = (
+				619B578A2AE60986003EEEA6 /* HqSHAUtil.h */,
+				619B578B2AE60986003EEEA6 /* HqSHAUtil.m */,
+			);
+			path = HqSHAUtil;
+			sourceTree = "<group>";
+		};
+		619B578C2AE60986003EEEA6 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				619B578D2AE60986003EEEA6 /* HqSafeToolConsts.h */,
+				619B578E2AE60986003EEEA6 /* HqSafeToolConsts.m */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		619B578F2AE60986003EEEA6 /* HqSafeToolImpVC */ = {
+			isa = PBXGroup;
+			children = (
+				619B57902AE60986003EEEA6 /* HqSafeToolImpVC.h */,
+				619B57922AE60986003EEEA6 /* HqSafeToolImpVC.m */,
+				619B57912AE60986003EEEA6 /* HqSafeToolImpVC.xib */,
+			);
+			path = HqSafeToolImpVC;
+			sourceTree = "<group>";
+		};
+		619B57972AE60986003EEEA6 /* HqMD5Util */ = {
+			isa = PBXGroup;
+			children = (
+				619B57982AE60986003EEEA6 /* HqMD5Util.m */,
+				619B57992AE60986003EEEA6 /* HqMD5Util.h */,
+			);
+			path = HqMD5Util;
+			sourceTree = "<group>";
+		};
+		619B57AE2AE6162F003EEEA6 /* HqSafeToolContainerVC */ = {
+			isa = PBXGroup;
+			children = (
+				619B57AF2AE61656003EEEA6 /* HqSafeToolContainerVC.h */,
+				619B57B02AE61656003EEEA6 /* HqSafeToolContainerVC.m */,
+				619B57B12AE61656003EEEA6 /* HqSafeToolContainerVC.xib */,
+			);
+			path = HqSafeToolContainerVC;
+			sourceTree = "<group>";
+		};
+		619B57B42AE61702003EEEA6 /* HqSafeTools */ = {
+			isa = PBXGroup;
+			children = (
+				619B57D52AE663FF003EEEA6 /* HqEncryptAndDecryptUtil */,
+				619B57BF2AE62BE7003EEEA6 /* HqEncodeDecodeUtil */,
+				619B57BB2AE62063003EEEA6 /* HqPublicViews */,
+				619B57B52AE617E8003EEEA6 /* HqEncodeAndDecodeVC */,
+				619B576E2AE60986003EEEA6 /* HqEncryptAndDecryptVC */,
+				619B57802AE60986003EEEA6 /* HqHashUtil */,
+				619B57732AE60986003EEEA6 /* HqHashVC */,
+				619B57972AE60986003EEEA6 /* HqMD5Util */,
+				619B578F2AE60986003EEEA6 /* HqSafeToolImpVC */,
+				619B577C2AE60986003EEEA6 /* HqSafeToolListVC */,
+				619B57892AE60986003EEEA6 /* HqSHAUtil */,
+				619B57AE2AE6162F003EEEA6 /* HqSafeToolContainerVC */,
+				619B578C2AE60986003EEEA6 /* Const */,
+				619B576F2AE60986003EEEA6 /* HqAES */,
+			);
+			path = HqSafeTools;
+			sourceTree = "<group>";
+		};
+		619B57B52AE617E8003EEEA6 /* HqEncodeAndDecodeVC */ = {
+			isa = PBXGroup;
+			children = (
+				619B57C32AE6392D003EEEA6 /* Views */,
+				619B57B62AE617FE003EEEA6 /* HqEncodeAndDecodeVC.h */,
+				619B57B72AE617FE003EEEA6 /* HqEncodeAndDecodeVC.m */,
+				619B57B82AE617FE003EEEA6 /* HqEncodeAndDecodeVC.xib */,
+			);
+			path = HqEncodeAndDecodeVC;
+			sourceTree = "<group>";
+		};
+		619B57BB2AE62063003EEEA6 /* HqPublicViews */ = {
+			isa = PBXGroup;
+			children = (
+				619B57BC2AE6208C003EEEA6 /* HqSafeToolHeaderView.h */,
+				619B57BD2AE6208C003EEEA6 /* HqSafeToolHeaderView.m */,
+			);
+			path = HqPublicViews;
+			sourceTree = "<group>";
+		};
+		619B57BF2AE62BE7003EEEA6 /* HqEncodeDecodeUtil */ = {
+			isa = PBXGroup;
+			children = (
+				619B57C02AE62C01003EEEA6 /* HqEncodeDecodeUtil.h */,
+				619B57C12AE62C01003EEEA6 /* HqEncodeDecodeUtil.m */,
+			);
+			path = HqEncodeDecodeUtil;
+			sourceTree = "<group>";
+		};
+		619B57C32AE6392D003EEEA6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				619B57C72AE63986003EEEA6 /* HqEncodeAndDecodeView.h */,
+				619B57C82AE63986003EEEA6 /* HqEncodeAndDecodeView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		619B57CA2AE65084003EEEA6 /* PublicViews */ = {
+			isa = PBXGroup;
+			children = (
+				619B57CB2AE6509C003EEEA6 /* HqTextView.h */,
+				619B57CC2AE6509C003EEEA6 /* HqTextView.m */,
+				619B57CE2AE65ADE003EEEA6 /* HqDialog.h */,
+				619B57CF2AE65ADE003EEEA6 /* HqDialog.m */,
+			);
+			path = PublicViews;
+			sourceTree = "<group>";
+		};
+		619B57D12AE6626F003EEEA6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				619B57D22AE66293003EEEA6 /* HqEncryptAndDecryptView.h */,
+				619B57D32AE66293003EEEA6 /* HqEncryptAndDecryptView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		619B57D52AE663FF003EEEA6 /* HqEncryptAndDecryptUtil */ = {
+			isa = PBXGroup;
+			children = (
+				619B57D62AE66418003EEEA6 /* HqEncryptAndDecryptUtil.h */,
+				619B57D72AE66418003EEEA6 /* HqEncryptAndDecryptUtil.m */,
+			);
+			path = HqEncryptAndDecryptUtil;
+			sourceTree = "<group>";
+		};
+		61BD04672AD106D400B5BBAF /* HqFileOpVC */ = {
+			isa = PBXGroup;
+			children = (
+				61BD04682AD106ED00B5BBAF /* HqFileOpVC.h */,
+				61BD04692AD106ED00B5BBAF /* HqFileOpVC.m */,
+			);
+			path = HqFileOpVC;
+			sourceTree = "<group>";
+		};
+		61BD046B2AD107ED00B5BBAF /* HqQrcodeVC */ = {
+			isa = PBXGroup;
+			children = (
+				61BD047B2AD2902100B5BBAF /* HqScanVC */,
+				61BD046F2AD1127D00B5BBAF /* HqQrcodeUtil */,
+				61BD046C2AD1080400B5BBAF /* HqQrcodeVC.h */,
+				61BD046D2AD1080400B5BBAF /* HqQrcodeVC.m */,
+				61F42E592AD78CD500598E1F /* HqQrcodeVC.xib */,
+			);
+			path = HqQrcodeVC;
+			sourceTree = "<group>";
+		};
+		61BD046F2AD1127D00B5BBAF /* HqQrcodeUtil */ = {
+			isa = PBXGroup;
+			children = (
+				61BD04702AD1128F00B5BBAF /* HqQrcodeUtil.h */,
+				61BD04712AD1128F00B5BBAF /* HqQrcodeUtil.m */,
+			);
+			path = HqQrcodeUtil;
+			sourceTree = "<group>";
+		};
+		61BD04732AD2841800B5BBAF /* HqImageUtil */ = {
+			isa = PBXGroup;
+			children = (
+				61BD04742AD2842E00B5BBAF /* HqImageUtil.h */,
+				61BD04752AD2842E00B5BBAF /* HqImageUtil.m */,
+			);
+			path = HqImageUtil;
+			sourceTree = "<group>";
+		};
+		61BD047B2AD2902100B5BBAF /* HqScanVC */ = {
+			isa = PBXGroup;
+			children = (
+				61BD047C2AD2904800B5BBAF /* HqScanVC.h */,
+				61BD047D2AD2904800B5BBAF /* HqScanVC.m */,
+			);
+			path = HqScanVC;
+			sourceTree = "<group>";
+		};
+		61C692342AD93E2500A868F2 /* HqVCManager */ = {
+			isa = PBXGroup;
+			children = (
+				61C692352AD93E3500A868F2 /* HqVCManager.h */,
+				61C692362AD93E3500A868F2 /* HqVCManager.m */,
+			);
+			path = HqVCManager;
+			sourceTree = "<group>";
+		};
+		61C822062AEA68F10009564A /* HqScreenSnapshotUtil */ = {
+			isa = PBXGroup;
+			children = (
+				61C822072AEA69080009564A /* HqScreenSnapshotUtil.h */,
+				61C822082AEA69080009564A /* HqScreenSnapshotUtil.m */,
+			);
+			path = HqScreenSnapshotUtil;
+			sourceTree = "<group>";
+		};
+		61C822422AEA8C290009564A /* HqSceenSnapshotManager */ = {
+			isa = PBXGroup;
+			children = (
+				61C822442AEA8C290009564A /* HqScreenSnapshotManager.h */,
+				61C822432AEA8C290009564A /* HqScreenSnapshotManager.m */,
+			);
+			path = HqSceenSnapshotManager;
+			sourceTree = "<group>";
+		};
+		61F42E432AD63A7A00598E1F /* HqScreenCapture */ = {
+			isa = PBXGroup;
+			children = (
+				61F42E442AD63AAC00598E1F /* HqScreenCapture.h */,
+				61F42E452AD63AAC00598E1F /* HqScreenCapture.m */,
+			);
+			path = HqScreenCapture;
+			sourceTree = "<group>";
+		};
+		61F42E492AD69DE100598E1F /* HqWindowController */ = {
+			isa = PBXGroup;
+			children = (
+				61F42E4A2AD69E2000598E1F /* HqWindowController.h */,
+				61F42E4B2AD69E2000598E1F /* HqWindowController.m */,
+			);
+			path = HqWindowController;
+			sourceTree = "<group>";
+		};
+		61F42E4D2AD6A0BC00598E1F /* HqToolsListVC */ = {
+			isa = PBXGroup;
+			children = (
+				61F42E4E2AD6A0D700598E1F /* HqToolsListVC.h */,
+				61F42E4F2AD6A0D700598E1F /* HqToolsListVC.m */,
+				61F42E512AD6C6D000598E1F /* HqTableRowView.h */,
+				61F42E522AD6C6D000598E1F /* HqTableRowView.m */,
+				61F42E542AD786FD00598E1F /* HqTableCellView.h */,
+				61F42E552AD786FD00598E1F /* HqTableCellView.m */,
+				61F42E5B2AD78D1800598E1F /* HqTestVC.h */,
+				61F42E5C2AD78D1800598E1F /* HqTestVC.m */,
+				61F42E5D2AD78D1800598E1F /* HqTestVC.xib */,
+			);
+			path = HqToolsListVC;
+			sourceTree = "<group>";
+		};
+		8C2AB6B97B9A95975D2A26D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				330C7CB42CF6F09E000AA76E /* SecurityInterface.framework */,
+				330C7CB22CF6F037000AA76E /* SecurityFoundation.framework */,
+				61BD047F2AD3A58400B5BBAF /* ScreenCaptureKit.framework */,
+				A34A87141C24403A1C4ECF52 /* Pods_HqMacTools.framework */,
+				E72683CEB2523E31EEC38A96 /* Pods_HqMacTools_HqMacToolsUITests.framework */,
+				219C2086AE08CDDC8AFF5DC8 /* Pods_HqMacToolsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6153BA262AC52B5D001A53CC /* HqMacTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6153BA502AC52B67001A53CC /* Build configuration list for PBXNativeTarget "HqMacTools" */;
+			buildPhases = (
+				449000E2438C7686557D9A02 /* [CP] Check Pods Manifest.lock */,
+				6153BA232AC52B5D001A53CC /* Sources */,
+				6153BA242AC52B5D001A53CC /* Frameworks */,
+				6153BA252AC52B5D001A53CC /* Resources */,
+				B7AF4D4C73A1E33CF1E4FA30 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HqMacTools;
+			productName = HqMacTools;
+			productReference = 6153BA272AC52B5D001A53CC /* HqMacTools.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6153BA3B2AC52B67001A53CC /* HqMacToolsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6153BA532AC52B67001A53CC /* Build configuration list for PBXNativeTarget "HqMacToolsTests" */;
+			buildPhases = (
+				A2D16888E9EB149B4EAD9ED2 /* [CP] Check Pods Manifest.lock */,
+				6153BA382AC52B67001A53CC /* Sources */,
+				6153BA392AC52B67001A53CC /* Frameworks */,
+				6153BA3A2AC52B67001A53CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6153BA3E2AC52B67001A53CC /* PBXTargetDependency */,
+			);
+			name = HqMacToolsTests;
+			productName = HqMacToolsTests;
+			productReference = 6153BA3C2AC52B67001A53CC /* HqMacToolsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6153BA452AC52B67001A53CC /* HqMacToolsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6153BA562AC52B67001A53CC /* Build configuration list for PBXNativeTarget "HqMacToolsUITests" */;
+			buildPhases = (
+				32F0DAADE2BEDEC2E5C104F0 /* [CP] Check Pods Manifest.lock */,
+				6153BA422AC52B67001A53CC /* Sources */,
+				6153BA432AC52B67001A53CC /* Frameworks */,
+				6153BA442AC52B67001A53CC /* Resources */,
+				B1150BB5BDBC342FE34D1E90 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6153BA482AC52B67001A53CC /* PBXTargetDependency */,
+			);
+			name = HqMacToolsUITests;
+			productName = HqMacToolsUITests;
+			productReference = 6153BA462AC52B67001A53CC /* HqMacToolsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6153BA1F2AC52B5D001A53CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					6153BA262AC52B5D001A53CC = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					6153BA3B2AC52B67001A53CC = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 6153BA262AC52B5D001A53CC;
+					};
+					6153BA452AC52B67001A53CC = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 6153BA262AC52B5D001A53CC;
+					};
+				};
+			};
+			buildConfigurationList = 6153BA222AC52B5D001A53CC /* Build configuration list for PBXProject "HqMacTools" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6153BA1E2AC52B5D001A53CC;
+			productRefGroup = 6153BA282AC52B5D001A53CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6153BA262AC52B5D001A53CC /* HqMacTools */,
+				6153BA3B2AC52B67001A53CC /* HqMacToolsTests */,
+				6153BA452AC52B67001A53CC /* HqMacToolsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6153BA252AC52B5D001A53CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6153BA312AC52B66001A53CC /* Assets.xcassets in Resources */,
+				619B57A82AE60986003EEEA6 /* HqSafeToolImpVC.xib in Resources */,
+				337727872D1A9A9B00BDDC6B /* HqWebSeverVC.xib in Resources */,
+				619B579C2AE60986003EEEA6 /* HqEncryptAndDecryptVC.xib in Resources */,
+				332D1F872CF7FE4F005BDF96 /* HqUtils.sh in Resources */,
+				619B57BA2AE617FE003EEEA6 /* HqEncodeAndDecodeVC.xib in Resources */,
+				330C7CBA2CF70F95000AA76E /* HqLockScript.command in Resources */,
+				61F42E5A2AD78CD500598E1F /* HqQrcodeVC.xib in Resources */,
+				619B57B32AE61656003EEEA6 /* HqSafeToolContainerVC.xib in Resources */,
+				619B57A12AE60986003EEEA6 /* HqSafeToolListVC.xib in Resources */,
+				619B579D2AE60986003EEEA6 /* HqHashVC.xib in Resources */,
+				6153BA342AC52B66001A53CC /* Main.storyboard in Resources */,
+				61872FC32AEA32500019EB8B /* HqScreenSnapshotVC.xib in Resources */,
+				33DCF8082D14151C00D6A6A9 /* HqJsonToModelVC.xib in Resources */,
+				61F42E5F2AD78D1800598E1F /* HqTestVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6153BA3A2AC52B67001A53CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6153BA442AC52B67001A53CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32F0DAADE2BEDEC2E5C104F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HqMacTools-HqMacToolsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		449000E2438C7686557D9A02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HqMacTools-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2D16888E9EB149B4EAD9ED2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HqMacToolsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1150BB5BDBC342FE34D1E90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HqMacTools-HqMacToolsUITests/Pods-HqMacTools-HqMacToolsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HqMacTools-HqMacToolsUITests/Pods-HqMacTools-HqMacToolsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HqMacTools-HqMacToolsUITests/Pods-HqMacTools-HqMacToolsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7AF4D4C73A1E33CF1E4FA30 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HqMacTools/Pods-HqMacTools-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HqMacTools/Pods-HqMacTools-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HqMacTools/Pods-HqMacTools-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6153BA232AC52B5D001A53CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C822092AEA69080009564A /* HqScreenSnapshotUtil.m in Sources */,
+				619B57A22AE60986003EEEA6 /* HqSafeToolListVC.m in Sources */,
+				619B57C92AE63986003EEEA6 /* HqEncodeAndDecodeView.m in Sources */,
+				619B57AD2AE60986003EEEA6 /* HqEncryptAndDecryptVC.m in Sources */,
+				619B57A32AE60986003EEEA6 /* HqHashUtil.m in Sources */,
+				619B57C22AE62C01003EEEA6 /* HqEncodeDecodeUtil.m in Sources */,
+				619B57AC2AE60986003EEEA6 /* HqMD5Util.m in Sources */,
+				61BD047E2AD2904800B5BBAF /* HqScanVC.m in Sources */,
+				61C692372AD93E3500A868F2 /* HqVCManager.m in Sources */,
+				61872FC72AEA32750019EB8B /* HqScreenSnapshotWindow.m in Sources */,
+				619B57D82AE66418003EEEA6 /* HqEncryptAndDecryptUtil.m in Sources */,
+				61F42E462AD63AAD00598E1F /* HqScreenCapture.m in Sources */,
+				61C822452AEA8C290009564A /* HqScreenSnapshotManager.m in Sources */,
+				61567EC32AEB7245008F732E /* HqScreenSnapshotConfig.m in Sources */,
+				61F42E4C2AD69E2000598E1F /* HqWindowController.m in Sources */,
+				619B57A72AE60986003EEEA6 /* HqSafeToolConsts.m in Sources */,
+				6153BA362AC52B66001A53CC /* main.m in Sources */,
+				619B57A92AE60986003EEEA6 /* HqSafeToolImpVC.m in Sources */,
+				619B579E2AE60986003EEEA6 /* HqHashVC.m in Sources */,
+				619B57362AE12DC6003EEEA6 /* NSString+HqStringExt.m in Sources */,
+				61872FC22AEA32500019EB8B /* HqScreenSnapshotVC.m in Sources */,
+				33DCF8072D14151C00D6A6A9 /* HqJsonToModelVC.m in Sources */,
+				619B57322AE12810003EEEA6 /* NSData+HqDataExt.m in Sources */,
+				619B57D42AE66293003EEEA6 /* HqEncryptAndDecryptView.m in Sources */,
+				61BD04762AD2842E00B5BBAF /* HqImageUtil.m in Sources */,
+				619B57BE2AE6208C003EEEA6 /* HqSafeToolHeaderView.m in Sources */,
+				619B57A52AE60986003EEEA6 /* HqSafeToolGroup.m in Sources */,
+				61F42E5E2AD78D1800598E1F /* HqTestVC.m in Sources */,
+				3377278C2D1A9AB300BDDC6B /* HqWebSever.m in Sources */,
+				619B57D02AE65ADE003EEEA6 /* HqDialog.m in Sources */,
+				619B579B2AE60986003EEEA6 /* HqAESUtil.m in Sources */,
+				6153BA5C2AC5339F001A53CC /* HqFileManager.m in Sources */,
+				61BD046E2AD1080400B5BBAF /* HqQrcodeVC.m in Sources */,
+				619B57A42AE60986003EEEA6 /* HqSafeToolItem.m in Sources */,
+				61BD046A2AD106ED00B5BBAF /* HqFileOpVC.m in Sources */,
+				619B57B92AE617FE003EEEA6 /* HqEncodeAndDecodeVC.m in Sources */,
+				619B57A62AE60986003EEEA6 /* HqSHAUtil.m in Sources */,
+				33AA519D2D1171DA00D87673 /* HqRemoveAlphaVC.m in Sources */,
+				61F42E502AD6A0D700598E1F /* HqToolsListVC.m in Sources */,
+				61F42E562AD786FD00598E1F /* HqTableCellView.m in Sources */,
+				337727932D1A9D0200BDDC6B /* HqChooseFileUtils.m in Sources */,
+				6153BA2C2AC52B5D001A53CC /* AppDelegate.m in Sources */,
+				33DCF80F2D15551700D6A6A9 /* HqScreenSnapshotToolBar.m in Sources */,
+				619B57562AE258E5003EEEA6 /* NSView+HqViewExt.m in Sources */,
+				61872FCB2AEA32930019EB8B /* HqScreenSnapshotView.m in Sources */,
+				337727902D1A9B9800BDDC6B /* HqUtils.m in Sources */,
+				61F42E532AD6C6D000598E1F /* HqTableRowView.m in Sources */,
+				33AA519A2D116FC500D87673 /* NSImage+HqImageUtils.m in Sources */,
+				61BD04722AD1128F00B5BBAF /* HqQrcodeUtil.m in Sources */,
+				619B57B22AE61656003EEEA6 /* HqSafeToolContainerVC.m in Sources */,
+				619B57CD2AE6509C003EEEA6 /* HqTextView.m in Sources */,
+				6166BD8B2AEB4FD700C1AD16 /* HqDrawInfo.m in Sources */,
+				33DCF80C2D141D5900D6A6A9 /* HqJsonToModelLogic.m in Sources */,
+				337727882D1A9A9B00BDDC6B /* HqWebSeverVC.m in Sources */,
+				33AA51A02D1179D800D87673 /* Drag.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6153BA382AC52B67001A53CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6153BA412AC52B67001A53CC /* HqMacToolsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6153BA422AC52B67001A53CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6153BA4B2AC52B67001A53CC /* HqMacToolsUITests.m in Sources */,
+				6153BA4D2AC52B67001A53CC /* HqMacToolsUITestsLaunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6153BA3E2AC52B67001A53CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6153BA262AC52B5D001A53CC /* HqMacTools */;
+			targetProxy = 6153BA3D2AC52B67001A53CC /* PBXContainerItemProxy */;
+		};
+		6153BA482AC52B67001A53CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6153BA262AC52B5D001A53CC /* HqMacTools */;
+			targetProxy = 6153BA472AC52B67001A53CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6153BA322AC52B66001A53CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6153BA332AC52B66001A53CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6153BA4E2AC52B67001A53CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6153BA4F2AC52B67001A53CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6153BA512AC52B67001A53CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 035155EE678DF8BED7E3A3F9 /* Pods-HqMacTools.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HqMacTools/HqMacTools.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 9RBG3335RD;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/HqMacTools/HqMacToolsPrefixHeader.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Masonry/Masonry.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PermissionsKit-macOS/PermissionsKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.framework/Headers\"",
+					"\"$(SRCROOT)/HqMacTools/ThirdLibs/openssl3/include\"",
+				);
+				INFOPLIST_KEY_NSCameraUsageDescription = "MacTools需要使用您的摄像头";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HqMacTools/ThirdLibs/openssl3/lib",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hhq.HqMacTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		6153BA522AC52B67001A53CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F994B08AFC54F33DB7C6AC3 /* Pods-HqMacTools.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HqMacTools/HqMacTools.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 9RBG3335RD;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/HqMacTools/HqMacToolsPrefixHeader.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Masonry/Masonry.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PermissionsKit-macOS/PermissionsKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.framework/Headers\"",
+					"\"$(SRCROOT)/HqMacTools/ThirdLibs/openssl3/include\"",
+				);
+				INFOPLIST_KEY_NSCameraUsageDescription = "MacTools需要使用您的摄像头";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HqMacTools/ThirdLibs/openssl3/lib",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hhq.HqMacTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		6153BA542AC52B67001A53CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63857E9022DBD6581CFBB291 /* Pods-HqMacToolsTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 95U4S8SM97;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hhq.HqMacToolsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HqMacTools.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HqMacTools";
+			};
+			name = Debug;
+		};
+		6153BA552AC52B67001A53CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1343BB260A1CF84EE67923BC /* Pods-HqMacToolsTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 95U4S8SM97;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hhq.HqMacToolsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HqMacTools.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HqMacTools";
+			};
+			name = Release;
+		};
+		6153BA572AC52B67001A53CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4FC0EA1878B11EF0E001C03 /* Pods-HqMacTools-HqMacToolsUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 95U4S8SM97;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hhq.HqMacToolsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_TARGET_NAME = HqMacTools;
+			};
+			name = Debug;
+		};
+		6153BA582AC52B67001A53CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD18C51999AB7760A753BF69 /* Pods-HqMacTools-HqMacToolsUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 95U4S8SM97;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hhq.HqMacToolsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_TARGET_NAME = HqMacTools;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6153BA222AC52B5D001A53CC /* Build configuration list for PBXProject "HqMacTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6153BA4E2AC52B67001A53CC /* Debug */,
+				6153BA4F2AC52B67001A53CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6153BA502AC52B67001A53CC /* Build configuration list for PBXNativeTarget "HqMacTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6153BA512AC52B67001A53CC /* Debug */,
+				6153BA522AC52B67001A53CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6153BA532AC52B67001A53CC /* Build configuration list for PBXNativeTarget "HqMacToolsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6153BA542AC52B67001A53CC /* Debug */,
+				6153BA552AC52B67001A53CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6153BA562AC52B67001A53CC /* Build configuration list for PBXNativeTarget "HqMacToolsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6153BA572AC52B67001A53CC /* Debug */,
+				6153BA582AC52B67001A53CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6153BA1F2AC52B5D001A53CC /* Project object */;
+}

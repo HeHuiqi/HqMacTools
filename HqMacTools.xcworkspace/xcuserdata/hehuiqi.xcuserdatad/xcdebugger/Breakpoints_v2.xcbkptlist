@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "6210B7D3-71D5-4B0E-A5C4-02E81961B6F8"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "77EA609B-0B7C-4AD4-AE88-4FD49EB39F63"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/GCDWebServer/GCDWebServer/Core/GCDWebServer.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1068"
+            endingLineNumber = "1068"
+            landmarkName = "-addGETHandlerForBasePath:directoryPath:indexFilename:cacheAge:allowRangeRequests:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
